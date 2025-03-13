@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang=pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif; /*Safe combination: Se não tiver a primeira fonte tenta a segunda se não tiver coloca uma genérica*/
+        /*
+        Medidas absolutas
+        cm, mm, in, px, pt, pc
+
+        Medidas relativas
+        em, ex, rem, vw, vh, %
+
+        16px geralmente é igual a 1em
+        */
+        font-size: 16px;
+        }
+
+        h1 {
+            /*
+            font-family: sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            /*shorthand font
+            font-style -> font-weight -> font-size -> font-family
+            */
+            font: italic bolder 3em sans-serif
+        }
+
+        p {
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus similique inventore facere id iusto ullam impedit molestiae provident placeat modi omnis nemo, optio mollitia quam possimus voluptate dolores dolore enim.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, eius voluptates architecto similique odio, velit nulla modi libero officiis unde quas at vel adipisci debitis numquam, ab eos aliquam assumenda. Aspernatur quas maxime magnam vel dignissimos consequatur atque excepturi consequuntur ipsum, culpa eaque facere at minima vitae odit adipisci! Minus, sapiente officia.</p>
+    <h2>Subtítulo do execício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis reiciendis officia nobis deserunt a, qui ad. Voluptatem distinctio, hic sunt ratione earum, ducimus facilis quibusdam exercitationem maxime sit, fugit omnis!</p>
+</body>
+</html>

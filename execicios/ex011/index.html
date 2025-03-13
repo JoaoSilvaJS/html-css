@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+
+    <p>Tente abrir esse site em vários dispositivos diferentes ou aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--max-width = tamanho máximo menos de 750px-->
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png"> <!--max-width = tamanho máximo menos de 1050px-->
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML5</p>
+    <!--<audio src="midia/I Am A Revenant.mp3" controls autoplay></audio>--> <!--Talvez o navegador não reproduza desta forma-->
+    <!--Se a opção acima não funcionar ainda existe a opção abaixo que vai tentar reproduzir na sequência-->
+    <audio preload="auto" autoplay controls>
+        <source src="midia/I Am A Revenant.mp3" type="audio/mpeg">
+        <source src="midia/I Am A Revenant.ogg" type="audio/ogg">
+        <source src="midia/I Am A Revenant.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
+        <a href="midia/I Am A Revenant.mp3">Clique aqui para fazer o download do arquivo</a>
+    </audio>
+    </body>
+</html>
