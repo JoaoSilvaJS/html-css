@@ -8,24 +8,37 @@
 <body>
     <h1>Teste de formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
-        <label for="inome">Nome:</label>
-        <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="on">
-        <p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="inumero" required placeholder="Informe a média" min="0" max="10" step="0.1">
-        </p>
-        <p>
-            <label for="imes">Período letivo:</label>
-            <input type="month" name="mes" id="imes">
-        </p>
-        <p>
-            <label for="idata">Data da prova:</label>
-        <input type="date" name="data" id="idata">
-        </p>
-        <p>
-            <label for="ihora">Hora:</label>
-            <input type="time" name="hora" id="ihora">
-        </p>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="on">
+            </p>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="inumero" required placeholder="Informe a média" min="0" max="10" step="0.1">
+            </p>
+            <p>
+                <label for="imes">Período letivo:</label>
+                <input type="month" name="mes" id="imes">
+            </p>
+            <p>
+                <label for="idata">Data da prova:</label>
+            <input type="date" name="data" id="idata">
+            </p>
+            <p>
+                <label for="ihora">Hora:</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel-national" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" autocomplete="on">
+            </p>
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
