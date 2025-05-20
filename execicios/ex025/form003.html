@@ -55,6 +55,70 @@
             <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label>
             <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label>
         </fieldset>
+        <fieldset>
+            <legend>Estado</legend>
+            <label for="iestado">Estado</label>
+
+            <select name="estado" id="iestado">
+                <option value="" selected>-- Selecione ---</option>
+                <optgroup label="Norte">
+                    <option value="RR">Roraima</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="AP">Amapá</option>
+                    <option value="PA">Belém</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AC">Acre</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="MA">São Luíz</option>
+                    <option value="PI">Teresina</option>
+                    <option value="CE">Fortaleza</option>
+                    <option value="RN">Natal</option>
+                    <option value="PB">João pessoa</option>
+                    <option value="PE">Recífe</option>
+                    <option value="AL">Maceió</option>
+                    <option value="SE">Aracajú</option>
+                    <option value="BA">Salvador</option>
+                </optgroup>
+                <optgroup label="Centro-Oeste">
+                    <option value="MT">Cuiabá</option>
+                    <option value="MS">Campo grande</option>
+                    <option value="GO">Goiânia</option>
+                    <option value="DF">Brasília</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="MG">Belo horizonte</option>
+                    <option value="ES">Vitória</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="PR">Curítiba</option>
+                    <option value="SC">Florianópolis</option>
+                    <option value="RS">Porto alegre</option>
+                </optgroup>           
+            </select>
+            <p>
+                <label for="iprofissao">Profissão:</label>
+                <input type="text" name="profissao" id="iprofissao" list="profissao">
+                <datalist id="profissao">
+                    <option>Analista de sistema</option>
+                    <option>Assistente de projetos</option>
+                    <option>Assistente de qualidade</option>
+                    <option>Auxiliar operacional C</option>
+                    <option>Auxiliar operacional B</option>
+                    <option>Auxiliar operacional A</option>
+                    <option>Auxiliar de eletricista</option>
+                    <option>Separador</option>
+                </datalist>
+            </p>
+        </fieldset>
+        <br>
+            <label for="img">Mensagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Envie uma mensagem"></textarea>
+
+        <br>
         <br>
         <label for="ifoto">Foto de perfil: </label>
         <input type="file" name="foto" id="ifoto" value="jpg">
@@ -62,6 +126,8 @@
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
             </p>
+            
+
     </form>
 </body>
 </html>
